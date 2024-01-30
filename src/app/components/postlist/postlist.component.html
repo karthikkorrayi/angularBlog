@@ -1,0 +1,22 @@
+<div class="container">
+    <ng-container *ngFor="let card of lists">
+      <div class="course-container">
+        <div class="course-card">
+          <div class="course-name">
+            <h3>This is written by {{ card.topic }}</h3>
+          </div>
+          <div>
+            <img [src]="card.image" alt="Course Image">
+          </div>
+          <div class="course-description">
+            <h6>{{ card.detail }}</h6>
+          </div>
+          <div class="course-buttons">
+            <button class="btn btn-read" routerLink="/comment">Add Comment</button>
+            <button class="btn btn-show" routerLink="/posts/post/{{ card.id }}">Show Details</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <router-outlet></router-outlet>

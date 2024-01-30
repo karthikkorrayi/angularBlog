@@ -1,0 +1,24 @@
+<div class="main-area">
+    <div class="content-area">
+      <div class="header">
+        <h1>Create a New Post</h1>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="form-area">
+          <h3>Add User's Info</h3>
+          <form (ngSubmit)="onSubmit(userForm.value)" #userForm="ngForm">
+            <label for="id">Id</label>
+            <input type="text" id="id" name="id" ngModel />
+            <label for="image">Image</label>
+            <input type="text" id="image" name="image" ngModel />
+            <label for="name">Topic</label>
+            <input type="text" id="name" name="name" ngModel />
+            <label for="description">Detail</label>
+            <textarea id="description" name="description" ngModel></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

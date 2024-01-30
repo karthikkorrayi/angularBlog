@@ -1,0 +1,154 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-area {
+  padding: 20px;
+  background-color: #ECF0F1;
+  border-radius: 8px;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.content-area {
+  padding: 20px;
+  background-color: #ECF0F1;
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+  color: #000c74;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #ECF0F1;
+  z-index: 1000;
+}
+
+h1,
+h3 {
+  color: #000c74;
+  margin: 10px 0px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: #2C3E50;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-area {
+  width: 70%;
+  padding: 10px 15px;
+}
+
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  color: #000c74;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000c74;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  text-align: right;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000c74;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: #48C9B0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1ABC9C;
+}
+
+#products {
+  font-family: 'Arial', Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#products tr:nth-child(even) {
+  background-color: #ECF0F1;
+}
+
+#products tr:hover {
+  background-color: #BDC3C7;
+}
+
+#products th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #000c74;
+  color: white;
+}
+
+td {
+  padding: 2px 3px;
+}
+
+.btn-delete,
+.btn-fetch,
+.btn-clear,
+.btn-edit {
+  background-color: #000c74;
+  color: white;
+  width: 80px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.btn-delete:hover,
+.btn-fetch:hover,
+.btn-clear:hover,
+.btn-edit:hover {
+  background-color: #1F618D;
+}
+
+.form-area {
+  margin-left: 50px;
+}

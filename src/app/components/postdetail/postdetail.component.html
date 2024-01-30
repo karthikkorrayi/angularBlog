@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 style="color:brown"></h2>
+    <ng-container *ngFor="let details of cards">
+      <div class="course-container">
+        <div class="course-card">
+          <div class="course-name">
+            <h3>This is written by {{ details.topic }}</h3>
+          </div>
+          <div class="course-image">
+            <img [src]="details.image" style="width: 100%; height: auto; max-height: 200px;" alt="Course Image">
+          </div>
+          <div class="course-details">
+            <h6>{{ details.detail }}</h6>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <router-outlet></router-outlet>

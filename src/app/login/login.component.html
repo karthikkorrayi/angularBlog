@@ -1,0 +1,21 @@
+<div class="main-area">
+    <div class="content-area">
+      <div class="header">
+        <h1>Login Page</h1>
+        <hr />
+      </div>
+      <div class="container">
+        <!-- Add account creation form -->
+        <div class="form-area">
+          <h3>Create Account</h3>
+          <form (ngSubmit)="onSubmit(userForm.value)" #userForm="ngForm">
+            <label>Username</label>
+            <input type="text" name="username" ngModel />
+            <label>Password</label>
+            <input type="text" name="password" ngModel />
+            <input type="submit" value="Create" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

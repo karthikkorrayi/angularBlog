@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .course-container {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .course-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .course-card {
+    text-align: center;
+  }
+
+  .course-name h3 {
+    color: #000c74;
+    margin: 10px 0;
+  }
+
+  .course-image {
+    margin-top: 10px;
+  }
+
+  .course-details h6 {
+    color: #2C3E50;
+    margin: 10px 0;
+  }
